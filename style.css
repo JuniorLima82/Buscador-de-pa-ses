@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: "Roboto";
+    transition: all 0.3s ease;
+}
+
+body {
+    margin-left: 3%;
+    margin-right: 3%;
+    background-color: #199c5f; 
+    color: #0b0808;
+}
+
+.subheader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.todosPaises {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.filtros input[type="radio"] {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.pais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    background-color: #d1cedf; 
+    transition: transform 0.3s ease; 
+}
+
+.pais:hover {
+    transform: scale(1.05);
+}
+
+#titulo-secundario {
+    text-align: center; 
+}
+
+#nome-país {
+    text-align: left;
+    margin-top: 20px; 
+}
+
+h2 {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+button {
+    position: absolute;  
+    top: 550px;                
+    right: 20px;    
+    background-color: #0044ff;
+    color: white; 
+    padding: 15px 50px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00ff40; 
+}
+
+/* Estilo da caixa que envolve os detalhes do país */
+.detalhes-box {
+    background-color: #fff; 
+    border-radius: 15px; 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.detalhes-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.detalhes-box p {
+    margin: 10px 0;
+}
+
+#detalhesPais {
+    background-color: #fff; /* Cor de fundo da caixa */
+    border-radius: 15px;    /* Bordas arredondadas */
+    padding: 20px;          /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    max-width: 500px;       /* Limita a largura máxima da caixa */
+    text-align: center;     /* Centraliza o conteúdo de texto */
+    width: 90%;             /* Largura adaptável */
+}
+
+#detalhesPais img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#detalhesPais p {
+    margin: 10px 0;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Países</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Buscador de Países</h1>
+    <div class="subheader">
+        <div class="inputBuscar"> Pesquisar pais: <input onkeyup="buscarPaises(this.value)" type="text"> </div>
+    <div class="filtros">
+        <input value="all" onchange="pesquisarPaisPorFiltro(this.value)" type="radio" name="filtros" checked /> Todos
+        <input value="america" onchange="pesquisarPaisPorFiltro(this.value)" type="radio" name="filtros" /> America
+        <input value="europe" onchange="pesquisarPaisPorFiltro(this.value)" type="radio" name="filtros" /> Eupora
+        <input value="asia" onchange="pesquisarPaisPorFiltro(this.value)" type="radio" name="filtros" /> Asia
+        <input value="africa" onchange="pesquisarPaisPorFiltro(this.value)" type="radio" name="filtros" /> Africa
+    </div>
+</div>
+<hr />
+<h2>Total de pais: <Span id="qtPaises">250</Span></h2>
+
+<div class="todosPaises">
+    
+</div>
+
+    <script src="code.js"></script>
+</body>
+
+</html>
